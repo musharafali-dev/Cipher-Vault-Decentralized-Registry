@@ -241,3 +241,4 @@ Commit #241 - 2026-08-08T15:01:48.852Z - feat(frontend): set up Next.js 14 App R
 Commit #242 - 2026-08-08T15:02:49.077Z - style(frontend): design Web3 dark mode glassmorphism and morphic UI theme (#242)
 Commit #243 - 2026-08-08T15:03:49.283Z - feat(store): implement Zustand useWalletStore for MetaMask and SIWE auth (#243)
 Commit #244 - 2026-08-08T15:04:49.472Z - feat(records): build CreateRecordModal with IPFS CID indexing sync (#244)
+Commit #245 - 2026-08-08T15:05:49.658Z - feat(records): build EditRecordModal and DeleteRecordModal components (#245)
