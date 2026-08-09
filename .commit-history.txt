@@ -10,3 +10,4 @@ Commit #10 - 2026-08-08T11:09:52.184Z - test(backend): add Supertest Jest integr
 Commit #11 - 2026-08-08T11:10:52.424Z - feat(frontend): set up Next.js 14 App Router, Tailwind CSS and Framer Motion (#11)
 Commit #12 - 2026-08-08T11:11:52.655Z - style(frontend): design Web3 dark mode glassmorphism and morphic UI theme (#12)
 Commit #13 - 2026-08-08T11:12:52.875Z - feat(store): implement Zustand useWalletStore for MetaMask and SIWE auth (#13)
+Commit #14 - 2026-08-08T11:13:53.101Z - feat(records): build CreateRecordModal with IPFS CID indexing sync (#14)
