@@ -226,3 +226,4 @@ Commit #226 - 2026-08-08T14:46:45.389Z - feat(settings): build Network Manager f
 Commit #227 - 2026-08-08T14:47:45.593Z - feat(about): build Architecture & Security Audit Specifications page (#227)
 Commit #228 - 2026-08-08T14:48:45.804Z - docs: add comprehensive README.md with quick start and tech stack breakdown (#228)
 Commit #229 - 2026-08-08T14:49:46.015Z - docs: add INSTALLATION.md, ARCHITECTURE.md, and DEPLOYMENT_GUIDE.md (#229)
+Commit #230 - 2026-08-08T14:50:46.232Z - refactor(ui): polish morphic cards, glowing badges, and 3D depth shadows (#230)
