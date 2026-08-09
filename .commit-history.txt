@@ -166,3 +166,4 @@ Commit #166 - 2026-08-08T13:46:30.488Z - test(contracts): add tests for record u
 Commit #167 - 2026-08-08T13:47:30.716Z - feat(backend): set up Express TypeScript server architecture with Helmet and CORS (#167)
 Commit #168 - 2026-08-08T13:48:31.225Z - feat(backend): design Prisma schema for Users, RecordCache and AuditLogs (#168)
 Commit #169 - 2026-08-08T13:49:31.457Z - feat(auth): implement SIWE nonce generation and Ethers signature verification (#169)
+Commit #170 - 2026-08-08T13:50:31.745Z - feat(auth): implement JWT token generation and authMiddleware guard (#170)
