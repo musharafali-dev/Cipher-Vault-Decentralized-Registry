@@ -131,3 +131,4 @@ Commit #131 - 2026-08-08T13:11:21.784Z - feat(dashboard): build Interactive Dash
 Commit #132 - 2026-08-08T13:12:22.137Z - feat(transactions): build On-Chain Transaction Explorer with Etherscan link generators (#132)
 Commit #133 - 2026-08-08T13:13:22.382Z - feat(profile): build User Profile page with off-chain avatar and bio updates (#133)
 Commit #134 - 2026-08-08T13:14:22.629Z - feat(settings): build Network Manager for Sepolia, Localhost and RPC nodes (#134)
+Commit #135 - 2026-08-08T13:15:22.958Z - feat(about): build Architecture & Security Audit Specifications page (#135)
