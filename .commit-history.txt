@@ -62,3 +62,4 @@ Commit #62 - 2026-08-08T12:02:04.355Z - feat(dashboard): build Interactive Dashb
 Commit #63 - 2026-08-08T12:03:04.588Z - feat(transactions): build On-Chain Transaction Explorer with Etherscan link generators (#63)
 Commit #64 - 2026-08-08T12:04:04.818Z - feat(profile): build User Profile page with off-chain avatar and bio updates (#64)
 Commit #65 - 2026-08-08T12:05:05.052Z - feat(settings): build Network Manager for Sepolia, Localhost and RPC nodes (#65)
+Commit #66 - 2026-08-08T12:06:05.280Z - feat(about): build Architecture & Security Audit Specifications page (#66)
