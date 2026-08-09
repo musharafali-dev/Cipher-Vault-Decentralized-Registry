@@ -4,3 +4,4 @@ Commit #4 - 2026-08-08T11:03:49.998Z - test(contracts): add Hardhat Chai unit te
 Commit #5 - 2026-08-08T11:04:50.325Z - test(contracts): add tests for record updates, soft deletions and ownership transfers (#5)
 Commit #6 - 2026-08-08T11:05:50.571Z - feat(backend): set up Express TypeScript server architecture with Helmet and CORS (#6)
 Commit #7 - 2026-08-08T11:06:51.384Z - feat(backend): design Prisma schema for Users, RecordCache and AuditLogs (#7)
+Commit #8 - 2026-08-08T11:07:51.707Z - feat(auth): implement SIWE nonce generation and Ethers signature verification (#8)
