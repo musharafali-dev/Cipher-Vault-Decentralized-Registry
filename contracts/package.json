@@ -8,6 +8,7 @@
     "test": "hardhat test",
     "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
     "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "seed:local": "hardhat run scripts/seed-onchain.ts --network localhost",
     "clean": "hardhat clean"
   },
   "keywords": [

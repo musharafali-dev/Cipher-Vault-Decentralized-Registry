@@ -18,6 +18,10 @@ module.exports = {
         vaultSurface: "#121824",
         vaultCard: "rgba(18, 24, 36, 0.8)",
         vaultBorder: "rgba(255, 255, 255, 0.08)",
+        darkBg: "#0b0f17",
+        darkSurface: "#121824",
+        darkCard: "rgba(18, 24, 36, 0.8)",
+        darkBorder: "rgba(255, 255, 255, 0.08)",
         amberGold: {
           50: "#fffbeb",
           100: "#fef3c7",
