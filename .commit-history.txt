@@ -124,3 +124,4 @@ Commit #124 - 2026-08-08T13:04:19.822Z - feat(auth): implement JWT token generat
 Commit #125 - 2026-08-08T13:05:20.060Z - test(backend): add Supertest Jest integration tests for auth and records API (#125)
 Commit #126 - 2026-08-08T13:06:20.335Z - feat(frontend): set up Next.js 14 App Router, Tailwind CSS and Framer Motion (#126)
 Commit #127 - 2026-08-08T13:07:20.563Z - style(frontend): design Web3 dark mode glassmorphism and morphic UI theme (#127)
+Commit #128 - 2026-08-08T13:08:20.823Z - feat(store): implement Zustand useWalletStore for MetaMask and SIWE auth (#128)
