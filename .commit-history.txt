@@ -52,3 +52,4 @@ Commit #52 - 2026-08-08T11:52:01.817Z - feat(backend): set up Express TypeScript
 Commit #53 - 2026-08-08T11:53:02.319Z - feat(backend): design Prisma schema for Users, RecordCache and AuditLogs (#53)
 Commit #54 - 2026-08-08T11:54:02.536Z - feat(auth): implement SIWE nonce generation and Ethers signature verification (#54)
 Commit #55 - 2026-08-08T11:55:02.751Z - feat(auth): implement JWT token generation and authMiddleware guard (#55)
+Commit #56 - 2026-08-08T11:56:02.993Z - test(backend): add Supertest Jest integration tests for auth and records API (#56)
