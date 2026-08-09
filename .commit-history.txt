@@ -210,3 +210,4 @@ Commit #210 - 2026-08-08T14:30:41.559Z - perf(contracts): optimize gas usage wit
 Commit #211 - 2026-08-08T14:31:41.837Z - test(contracts): add Hardhat Chai unit test suite for record creation (#211)
 Commit #212 - 2026-08-08T14:32:42.054Z - test(contracts): add tests for record updates, soft deletions and ownership transfers (#212)
 Commit #213 - 2026-08-08T14:33:42.294Z - feat(backend): set up Express TypeScript server architecture with Helmet and CORS (#213)
+Commit #214 - 2026-08-08T14:34:42.768Z - feat(backend): design Prisma schema for Users, RecordCache and AuditLogs (#214)
