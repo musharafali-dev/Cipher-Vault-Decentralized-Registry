@@ -1,0 +1,29 @@
+{
+  "name": "web3-record-registry-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Decentralized Record Management System",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "solidity",
+    "hardhat",
+    "ethers",
+    "web3",
+    "openzeppelin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.8",
+    "typescript": "^5.5.4"
+  }
+}

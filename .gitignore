@@ -1,0 +1,28 @@
+# Node & Build artifacts
+node_modules/
+.next/
+dist/
+build/
+coverage/
+.cache/
+
+# Hardhat & Solidity
+contracts/artifacts/
+contracts/cache/
+contracts/typechain-types/
+
+# Backend & Database
+backend/dist/
+backend/prisma/dev.db
+backend/prisma/dev.db-journal
+
+# Environment & Local secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS Files
+.DS_Store
+Thumbs.db

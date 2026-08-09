@@ -1,0 +1,55 @@
+// Prisma Schema for Web3 Record Registry Backend
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id           String        @id @default(uuid())
+  address      String        @unique
+  nonce        String
+  name         String?
+  email        String?
+  avatar       String?
+  bio          String?
+  role         String        @default("USER") // USER, ADMIN
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  records      RecordCache[]
+  auditLogs    AuditLog[]
+
+  @@index([address])
+}
+
+model RecordCache {
+  id           String   @id @default(uuid())
+  onChainId    String   @unique // bytes32 hex string
+  ownerAddress String
+  owner        User     @relation(fields: [ownerAddress], references: [address], onDelete: Cascade)
+  title        String
+  contentHash  String   // IPFS CID or SHA-256 hash
+  category     String
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([ownerAddress])
+  @@index([onChainId])
+  @@index([category])
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  action    String   // e.g. "SIGN_IN", "UPDATE_PROFILE", "SYNC_RECORD"
+  details   String?
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
