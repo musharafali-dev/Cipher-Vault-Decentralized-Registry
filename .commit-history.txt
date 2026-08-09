@@ -266,3 +266,4 @@ Commit #266 - 2026-08-08T15:26:54.640Z - feat(store): implement Zustand useWalle
 Commit #267 - 2026-08-08T15:27:54.876Z - feat(records): build CreateRecordModal with IPFS CID indexing sync (#267)
 Commit #268 - 2026-08-08T15:28:55.145Z - feat(records): build EditRecordModal and DeleteRecordModal components (#268)
 Commit #269 - 2026-08-08T15:29:55.389Z - feat(dashboard): build Interactive Dashboard with full-text search and category filters (#269)
+Commit #270 - 2026-08-08T15:30:55.667Z - feat(transactions): build On-Chain Transaction Explorer with Etherscan link generators (#270)
