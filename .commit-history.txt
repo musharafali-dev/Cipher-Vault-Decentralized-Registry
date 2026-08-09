@@ -67,3 +67,4 @@ Commit #67 - 2026-08-08T12:07:05.555Z - docs: add comprehensive README.md with q
 Commit #68 - 2026-08-08T12:08:05.834Z - docs: add INSTALLATION.md, ARCHITECTURE.md, and DEPLOYMENT_GUIDE.md (#68)
 Commit #69 - 2026-08-08T12:09:06.063Z - refactor(ui): polish morphic cards, glowing badges, and 3D depth shadows (#69)
 Commit #70 - 2026-08-08T12:10:06.272Z - feat(contracts): implement DecentralizedRecordRegistry Solidity contract (#70)
+Commit #71 - 2026-08-08T12:11:06.507Z - security(contracts): integrate OpenZeppelin ReentrancyGuard and Ownable 5.0 (#71)
