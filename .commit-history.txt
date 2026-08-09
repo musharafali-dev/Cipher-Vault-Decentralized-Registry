@@ -36,3 +36,4 @@ Commit #36 - 2026-08-08T11:35:58.053Z - feat(store): implement Zustand useWallet
 Commit #37 - 2026-08-08T11:36:58.267Z - feat(records): build CreateRecordModal with IPFS CID indexing sync (#37)
 Commit #38 - 2026-08-08T11:37:58.505Z - feat(records): build EditRecordModal and DeleteRecordModal components (#38)
 Commit #39 - 2026-08-08T11:38:58.779Z - feat(dashboard): build Interactive Dashboard with full-text search and category filters (#39)
+Commit #40 - 2026-08-08T11:39:59.017Z - feat(transactions): build On-Chain Transaction Explorer with Etherscan link generators (#40)
