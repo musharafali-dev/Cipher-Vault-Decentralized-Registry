@@ -133,3 +133,4 @@ Commit #133 - 2026-08-08T13:13:22.382Z - feat(profile): build User Profile page 
 Commit #134 - 2026-08-08T13:14:22.629Z - feat(settings): build Network Manager for Sepolia, Localhost and RPC nodes (#134)
 Commit #135 - 2026-08-08T13:15:22.958Z - feat(about): build Architecture & Security Audit Specifications page (#135)
 Commit #136 - 2026-08-08T13:16:23.196Z - docs: add comprehensive README.md with quick start and tech stack breakdown (#136)
+Commit #137 - 2026-08-08T13:17:23.453Z - docs: add INSTALLATION.md, ARCHITECTURE.md, and DEPLOYMENT_GUIDE.md (#137)
