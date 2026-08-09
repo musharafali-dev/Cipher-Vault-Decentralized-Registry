@@ -122,3 +122,4 @@ Commit #122 - 2026-08-08T13:02:19.386Z - feat(backend): design Prisma schema for
 Commit #123 - 2026-08-08T13:03:19.608Z - feat(auth): implement SIWE nonce generation and Ethers signature verification (#123)
 Commit #124 - 2026-08-08T13:04:19.822Z - feat(auth): implement JWT token generation and authMiddleware guard (#124)
 Commit #125 - 2026-08-08T13:05:20.060Z - test(backend): add Supertest Jest integration tests for auth and records API (#125)
+Commit #126 - 2026-08-08T13:06:20.335Z - feat(frontend): set up Next.js 14 App Router, Tailwind CSS and Framer Motion (#126)
