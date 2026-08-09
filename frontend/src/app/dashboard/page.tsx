@@ -40,29 +40,59 @@ export default function Dashboard() {
 
   const fetchRecords = useCallback(async () => {
     setIsLoading(true);
+    let fetchedOnChain = false;
+
     try {
       const contract = await getReadOnlyContract();
       const rawRecords = await contract.getAllRecords();
 
-      const formatted: RecordItem[] = rawRecords.map((r: any) => ({
-        id: r.id,
-        owner: r.owner,
-        title: r.title,
-        contentHash: r.contentHash,
-        category: r.category || "General",
-        createdAt: Number(r.createdAt) * 1000,
-        updatedAt: Number(r.updatedAt) * 1000,
-        isActive: r.isActive,
-      }));
+      if (rawRecords && rawRecords.length > 0) {
+        const formatted: RecordItem[] = rawRecords.map((r: any) => ({
+          id: r.id,
+          owner: r.owner,
+          title: r.title,
+          contentHash: r.contentHash,
+          category: r.category || "General",
+          createdAt: Number(r.createdAt) * 1000,
+          updatedAt: Number(r.updatedAt) * 1000,
+          isActive: r.isActive,
+        }));
 
-      setRecords(formatted);
+        setRecords(formatted);
+        fetchedOnChain = true;
+      }
       await refreshBalance();
     } catch (error: any) {
-      console.error("Fetch records error:", error);
-      toast.error("Failed to fetch on-chain records from contract.");
-    } finally {
-      setIsLoading(false);
+      console.warn("On-chain record fetch notice (attempting backend fallback):", error?.message || error);
     }
+
+    // Fallback to Express Backend API if no on-chain records returned
+    if (!fetchedOnChain) {
+      try {
+        const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api/v1";
+        const res = await fetch(`${API_BASE}/records`);
+        if (res.ok) {
+          const apiData = await res.json();
+          if (apiData.success && apiData.data) {
+            const formatted: RecordItem[] = apiData.data.map((r: any) => ({
+              id: r.onChainId || r.id,
+              owner: r.ownerAddress || "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+              title: r.title,
+              contentHash: r.contentHash,
+              category: r.category || "General",
+              createdAt: new Date(r.createdAt).getTime(),
+              updatedAt: new Date(r.updatedAt).getTime(),
+              isActive: r.isActive !== false,
+            }));
+            setRecords(formatted);
+          }
+        }
+      } catch (apiErr) {
+        console.error("Backend API fetch fallback error:", apiErr);
+      }
+    }
+
+    setIsLoading(false);
   }, [refreshBalance]);
 
   useEffect(() => {
