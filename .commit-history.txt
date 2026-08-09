@@ -107,3 +107,4 @@ Commit #107 - 2026-08-08T12:47:15.578Z - feat(records): build EditRecordModal an
 Commit #108 - 2026-08-08T12:48:15.804Z - feat(dashboard): build Interactive Dashboard with full-text search and category filters (#108)
 Commit #109 - 2026-08-08T12:49:16.038Z - feat(transactions): build On-Chain Transaction Explorer with Etherscan link generators (#109)
 Commit #110 - 2026-08-08T12:50:16.252Z - feat(profile): build User Profile page with off-chain avatar and bio updates (#110)
+Commit #111 - 2026-08-08T12:51:16.458Z - feat(settings): build Network Manager for Sepolia, Localhost and RPC nodes (#111)
