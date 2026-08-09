@@ -14,3 +14,4 @@ Commit #14 - 2026-08-08T11:13:53.101Z - feat(records): build CreateRecordModal w
 Commit #15 - 2026-08-08T11:14:53.322Z - feat(records): build EditRecordModal and DeleteRecordModal components (#15)
 Commit #16 - 2026-08-08T11:15:53.554Z - feat(dashboard): build Interactive Dashboard with full-text search and category filters (#16)
 Commit #17 - 2026-08-08T11:16:53.781Z - feat(transactions): build On-Chain Transaction Explorer with Etherscan link generators (#17)
+Commit #18 - 2026-08-08T11:17:54.000Z - feat(profile): build User Profile page with off-chain avatar and bio updates (#18)
