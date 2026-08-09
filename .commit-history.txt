@@ -31,3 +31,4 @@ Commit #31 - 2026-08-08T11:30:57.005Z - feat(auth): implement SIWE nonce generat
 Commit #32 - 2026-08-08T11:31:57.217Z - feat(auth): implement JWT token generation and authMiddleware guard (#32)
 Commit #33 - 2026-08-08T11:32:57.428Z - test(backend): add Supertest Jest integration tests for auth and records API (#33)
 Commit #34 - 2026-08-08T11:33:57.639Z - feat(frontend): set up Next.js 14 App Router, Tailwind CSS and Framer Motion (#34)
+Commit #35 - 2026-08-08T11:34:57.848Z - style(frontend): design Web3 dark mode glassmorphism and morphic UI theme (#35)
