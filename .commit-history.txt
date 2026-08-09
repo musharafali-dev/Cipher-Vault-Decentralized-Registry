@@ -109,3 +109,4 @@ Commit #109 - 2026-08-08T12:49:16.038Z - feat(transactions): build On-Chain Tran
 Commit #110 - 2026-08-08T12:50:16.252Z - feat(profile): build User Profile page with off-chain avatar and bio updates (#110)
 Commit #111 - 2026-08-08T12:51:16.458Z - feat(settings): build Network Manager for Sepolia, Localhost and RPC nodes (#111)
 Commit #112 - 2026-08-08T12:52:16.721Z - feat(about): build Architecture & Security Audit Specifications page (#112)
+Commit #113 - 2026-08-08T12:53:16.953Z - docs: add comprehensive README.md with quick start and tech stack breakdown (#113)
