@@ -25,3 +25,4 @@ Commit #25 - 2026-08-08T11:24:55.519Z - security(contracts): integrate OpenZeppe
 Commit #26 - 2026-08-08T11:25:55.736Z - perf(contracts): optimize gas usage with custom Solidity 0.8.24 errors (#26)
 Commit #27 - 2026-08-08T11:26:55.931Z - test(contracts): add Hardhat Chai unit test suite for record creation (#27)
 Commit #28 - 2026-08-08T11:27:56.126Z - test(contracts): add tests for record updates, soft deletions and ownership transfers (#28)
+Commit #29 - 2026-08-08T11:28:56.334Z - feat(backend): set up Express TypeScript server architecture with Helmet and CORS (#29)
