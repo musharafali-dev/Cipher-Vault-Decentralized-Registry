@@ -93,3 +93,4 @@ Commit #93 - 2026-08-08T12:33:11.940Z - feat(contracts): implement Decentralized
 Commit #94 - 2026-08-08T12:34:12.169Z - security(contracts): integrate OpenZeppelin ReentrancyGuard and Ownable 5.0 (#94)
 Commit #95 - 2026-08-08T12:35:12.403Z - perf(contracts): optimize gas usage with custom Solidity 0.8.24 errors (#95)
 Commit #96 - 2026-08-08T12:36:12.627Z - test(contracts): add Hardhat Chai unit test suite for record creation (#96)
+Commit #97 - 2026-08-08T12:37:12.852Z - test(contracts): add tests for record updates, soft deletions and ownership transfers (#97)
