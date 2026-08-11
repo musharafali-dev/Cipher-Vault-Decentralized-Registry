@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useWalletStore } from "@/store/useWalletStore";
-import { Wallet, Shield, ChevronRight, LogOut, Copy, Check, Lock } from "lucide-react";
+import { Wallet, Shield, ChevronRight, LogOut, Copy, Check, Lock, ShieldAlert } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -16,6 +16,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Dashboard", href: "/dashboard" },
+    { name: "Security", href: "/security" },
     { name: "Transactions", href: "/transactions" },
     { name: "Profile", href: "/profile" },
     { name: "Settings", href: "/settings" },
@@ -74,7 +75,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer ${
+                className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
                   isActive
                     ? "bg-amber-500/15 text-amber-300 border border-amber-500/30 font-bold"
                     : "text-slate-300 hover:text-white hover:bg-white/5"
@@ -121,6 +122,18 @@ export default function Navbar() {
                     <p className="text-[11px] uppercase tracking-wider text-slate-400 font-semibold mt-2.5">Wallet Address</p>
                     <p className="font-mono text-xs text-amber-400 font-semibold break-all mt-0.5">{address}</p>
                   </div>
+
+                  <Link
+                    href="/security"
+                    onClick={() => setDropdownOpen(false)}
+                    className="flex items-center justify-between p-3 hover:bg-white/5 rounded-2xl text-xs text-slate-200 font-semibold transition cursor-pointer"
+                  >
+                    <span className="flex items-center gap-2">
+                      <ShieldAlert className="w-4 h-4 text-amber-400" />
+                      SecOps Audit Center
+                    </span>
+                    <ChevronRight className="w-4 h-4 text-slate-400" />
+                  </Link>
 
                   <Link
                     href="/profile"

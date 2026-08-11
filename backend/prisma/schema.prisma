@@ -1,4 +1,4 @@
-// Prisma Schema for Web3 Record Registry Backend
+// Prisma Schema for Web3 Record Registry Backend with Security Enriched Models
 
 datasource db {
   provider = "sqlite"
@@ -10,18 +10,19 @@ generator client {
 }
 
 model User {
-  id           String        @id @default(uuid())
-  address      String        @unique
-  nonce        String
-  name         String?
-  email        String?
-  avatar       String?
-  bio          String?
-  role         String        @default("USER") // USER, ADMIN
-  createdAt    DateTime      @default(now())
-  updatedAt    DateTime      @updatedAt
-  records      RecordCache[]
-  auditLogs    AuditLog[]
+  id             String        @id @default(uuid())
+  address        String        @unique
+  nonce          String
+  nonceCreatedAt DateTime      @default(now())
+  name           String?
+  email          String?
+  avatar         String?
+  bio            String?
+  role           String        @default("USER") // USER, ADMIN, AUDITOR
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  records        RecordCache[]
+  auditLogs      AuditLog[]
 
   @@index([address])
 }
@@ -47,9 +48,13 @@ model AuditLog {
   id        String   @id @default(uuid())
   userId    String
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  action    String   // e.g. "SIGN_IN", "UPDATE_PROFILE", "SYNC_RECORD"
+  action    String   // e.g. "SIGN_IN", "UPDATE_PROFILE", "SYNC_RECORD", "SECURITY_ALERT"
   details   String?
+  ipAddress String?
+  userAgent String?
+  riskLevel String   @default("INFO") // INFO, WARN, CRITICAL
   createdAt DateTime @default(now())
 
   @@index([userId])
+  @@index([riskLevel])
 }
